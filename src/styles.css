@@ -1,0 +1,93 @@
+.Wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.Wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.Wrapper .form form {
+  display: flex;
+  flex-direction: column;
+  
+  width: 80%;
+  gap: 10px;
+
+
+}
+
+.Wrapper .form form input {
+  padding: 20px;
+
+  background-color: #f1f1f1;
+  border: none;
+
+  outline: none;
+}
+.Wrapper .form .privacidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0 20px 0;
+
+  width: 100%;
+}
+
+.Wrapper .form .privacidade input {
+  margin-right: 10px;
+}
+.Wrapper .form button {
+  padding: 20px;
+
+  color: #fff;
+  background-color: #000;
+  border: none;
+
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Wrapper .information {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 20px 40px 20px;
+}
+
+.Wrapper .information h1 {
+  font-size: 60px;
+}
+
+
+.Wrapper .information p {
+  font-size: 20px;
+}
+
+@media (max-width: 620px) {
+  .Wrapper {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .Wrapper div {
+    width: 100%;
+  }
+
+  .Wrapper .information h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  
+  .Wrapper .information p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
